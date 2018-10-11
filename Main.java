@@ -28,6 +28,9 @@ public class Main
 			System.out.print(it.next()+" ");
 		}
 			}
+			
+		}
+		
 		catch(Exception e){
 			System.out.println("Invalid input");
 		}
