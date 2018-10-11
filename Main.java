@@ -7,6 +7,7 @@ public class Main
 		int n;
 		List<Integer> ar=new ArrayList<>();
 		Scanner br=new Scanner(System.in);
+		try{
 		n=br.nextInt();
 		int a[]=new int[n];
 		for(int i=0;i<a.length;i++){
@@ -17,10 +18,18 @@ public class Main
 					ar.add(a[i]);
 				}
 			}
+		if(ar.isEmpty()){
+			System.out.println("unique");
+		}
+		else{
 		Collections.sort(ar);
-	    Iterator it=ar.iterator();
+	        Iterator it=ar.iterator();
 		while(it.hasNext()){
 			System.out.print(it.next()+" ");
+		}
+			}
+		catch(Exception e){
+			System.out.println("Invalid input");
 		}
 	}
 }
